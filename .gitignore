@@ -28,6 +28,7 @@ package-lock.json
 .eslintcache
 prepros.config
 .yarn
+.yarnrc.yml
 .pnp.cjs
 .pnp.loader.mjs
 *.pem

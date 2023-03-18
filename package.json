@@ -1,14 +1,29 @@
 {
-  "name": "pixelssh",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "devDependencies": {
-    "prettier": "2.8.4"
-  }
+    "name": "pixelssh",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "latest",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "18.15.3",
+        "@types/react": "18.0.28",
+        "@typescript-eslint/eslint-plugin": "^5.43.0",
+        "eslint": "^8.0.1",
+        "eslint-config-standard-with-typescript": "latest",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-react": "latest",
+        "prettier": "^2.8.4",
+        "typescript": "*"
+    }
 }
