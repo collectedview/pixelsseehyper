@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 *:before,
 *:after {
     box-sizing: border-box;
@@ -167,6 +168,7 @@ a {
     align-items: center;
     align-content: center;
     height: auto;
+    min-height: 30vh;
     width: 100%;
     max-width: 90vw;
     padding: 0;
@@ -258,7 +260,6 @@ a {
 
 @media only screen and (min-width: 1400px) {
     .viewer video {
-        min-height: 30vh;
         max-width: 60vw;
     }
 }
