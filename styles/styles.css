@@ -25,10 +25,13 @@ body {
     overflow-x: hidden;
     font-size: 18px;
     line-height: 36px;
+    overflow-x: hidden;
 }
 
 body,
 html {
+    z-index: 0;
+    position: relative;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
     -o-scroll-behavior: smooth;
@@ -45,11 +48,13 @@ html {
     -ms-appearance: none;
     appearance: none;
     color: rgba(45, 48, 71, 1);
-    background-color: rgba(113, 128, 185, 1);
+    background-color: rgba(239, 239, 240, 1);
     font-family: 'Ubuntu', sans-serif;
 }
 
 main {
+    z-index: 0;
+    position: relative;
     display: block;
     height: auto;
     width: 100%;
@@ -72,22 +77,48 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 .container {
+    z-index: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    flex-flow: column nowrap;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
     height: auto;
     width: 100%;
     padding: 0;
-    margin: 18vh auto;
+    margin: 3vh auto;
 }
 
-.viewer{
+.container::after {
+    z-index: 1000;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 3vh 3vw;
+    content: url('../public/pixelssh-pattern.svg');
+    top: 50%;
+    right: 50%;
+    transform: rotate(90deg) translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.header {
+    z-index: 2000;
+    position: relative;
     flex: 1;
     align-self: center;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.header ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -96,27 +127,78 @@ a {
     align-items: center;
     align-content: center;
     height: auto;
-    min-height: 30vh;
     width: 100%;
-    max-width: 90vw;
     padding: 0;
-    margin: 9vh auto;
-    border: 3px solid rgba(113, 128, 185, 1);
-    border-radius: 18px;
-    background-color: #2D3047;
-    box-shadow: rgba(45, 48, 71, 0.3) 0px 30px 60px 3px;
-    transition: all .3s cubic-bezier(0.25,0.1,0.25,1)
+    margin: 0 auto;
+}
+
+.header ul li {
+    margin: 1vh auto;
 }
 
 .logo {
+    z-index: 3000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     padding: 0;
     margin: 0 auto;
     background-color: transparent;
     border-radius: 90px;
-    box-shadow: rgba(239, 239, 240, 0.3) 0px 30px 60px 3px;
+    text-align: center;
+    box-shadow: rgba(45, 48, 71, 0.3) 0px 30px 60px 3px;
+}
+
+.viewer video {
+    z-index: 2000;
+    position: relative;
+    flex: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 90vw;
+    padding: 0;
+    margin: 3vh auto;
+    border: 3px solid rgba(113, 128, 185, 1);
+    border-radius: 18px;
+    background-color: #2d3047;
+    box-shadow: rgba(45, 48, 71, 0.3) 0px 30px 60px 3px;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.privacy {
+    position: relative;
+    flex: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 90vw;
+    padding: 0;
+    margin: 3vh auto;
 }
 
 .footer {
+    z-index: 2000;
+    position: relative;
     flex: 1;
     align-self: center;
     height: auto;
@@ -141,30 +223,42 @@ a {
 }
 
 .footer ul li {
-    margin: 1vh 1vw;
+    margin: 3vh auto;
 }
 
 .footer ul li a {
-    color: rgba(113, 128, 185, 1);
-    background-color: rgba(45, 48, 71, 1);
-    padding: 0.5em 1.5em;
+    padding: 1.5vh 6vw;
     border-radius: 90px;
+    color: rgba(45, 48, 71, 1);
+    background-color: rgba(239, 239, 240, 1);
     box-shadow: rgba(45, 48, 71, 0.3) 0px 30px 60px 3px;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.footer ul li a:hover {
+    color: rgba(239, 239, 240, 1);
+    background-color: rgba(45, 48, 71, 1);
 }
 
 .footer ul li span {
-    font-size: 9px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(45, 48, 71, 1);
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 900px) {
-    .viewer{
-        max-width: 60vw;
+@media only screen and (min-width: 1000px) {
+    .container {
+        margin: 6vh auto;
+    }
+    .viewer video {
+        margin: 6vh auto;
     }
 }
 
-@media only screen and (min-width: 1800px) {
-    .viewer{
-        max-width: 30vw;
+@media only screen and (min-width: 1400px) {
+    .viewer video {
+        min-height: 30vh;
+        max-width: 60vw;
     }
 }

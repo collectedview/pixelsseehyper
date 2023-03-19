@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Header from '@/components/header'
-import Viewer from '@/components/viewer'
+import Privacy from '@/components/privacy'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -14,12 +14,14 @@ export default function Home() {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="googlebot" content="noindex, nofollow" />
                 <link rel="icon" href="/pixelssh.ico" />
             </Head>
             <main>
                 <div className="container">
                     <Header />
-                    <Viewer />
+                    <Privacy />
                     <Footer />
                 </div>
             </main>
