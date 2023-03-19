@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
     return (
@@ -15,14 +16,35 @@ export default function Home() {
             </Head>
             <main>
                 <div className="container">
+                <div className="viewer">
                     <Image
                         className="logo"
                         src="/pixelssh.svg"
                         alt="pixelssh"
-                        width={100}
-                        height={100}
+                        width={90}
+                        height={90}
                         priority
                     />
+                </div>
+                <div className="footer">
+                    <ul>
+                        <li>
+                            <Link
+                                href="mailto:wave@pixels.sh"
+                                target="_self"
+                                aria-label="Send a wave"
+                                type="link"
+                            >
+                                Send a wave
+                            </Link>
+                        </li>
+                        <li>
+                            <span>
+                                &#x24B8; {new Date().getFullYear()} pixelssh
+                            </span>
+                        </li>
+                    </ul>
+                </div>
                 </div>
             </main>
         </>
