@@ -1,4 +1,7 @@
+import React from 'react'
+
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
     return (
@@ -6,14 +9,16 @@ export default function Header() {
             <div className="header">
                 <ul>
                     <li>
-                        <Image
-                            className="logo"
-                            src="/pixelssh.svg"
-                            alt="pixelssh"
-                            width={90}
-                            height={90}
-                            priority
-                        />
+                        <Link href="/">
+                            <Image
+                                className="logo"
+                                src="/pixelssh.svg"
+                                alt="pixelssh"
+                                width={90}
+                                height={90}
+                                priority
+                            />
+                        </Link>
                     </li>
                 </ul>
             </div>

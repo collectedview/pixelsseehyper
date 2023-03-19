@@ -1,11 +1,10 @@
-import { useRef } from 'react'
+import React from 'react'
 
-import { stream } from '@/components/media'
+import { userMedia } from '@/components/user-media'
+import Video from '@/components/video'
 
 export default function Viewer() {
-    const video = useRef()
-
-    const { data } = stream({
+    const { media } = userMedia({
         audio: true,
         video: {
             facingMode: 'user',
@@ -15,15 +14,10 @@ export default function Viewer() {
         },
     })
 
-    if (data) {
-        video.current.srcObject = data
-        video.current.play()
-    }
-
     return (
         <>
             <div className="viewer">
-                <video ref={video} autoPlay playsInline muted />
+                <Video srcObject={media} />
             </div>
         </>
     )

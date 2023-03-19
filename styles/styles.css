@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 *:before,
 *:after {
     box-sizing: border-box;
@@ -98,12 +99,13 @@ a {
     height: auto;
     width: 100%;
     padding: 0;
-    margin: 3vh 3vw;
+    margin: 0 auto;
     content: url('../public/pixelssh-pattern.svg');
-    top: 50%;
-    right: 50%;
+    top: 0;
+    left: 0;
     transform: rotate(90deg) translate(-50%, -50%);
-    opacity: 0.1;
+    opacity: 0.3;
+    text-align: center;
 }
 
 .header {
@@ -154,7 +156,7 @@ a {
     box-shadow: rgba(45, 48, 71, 0.3) 0px 30px 60px 3px;
 }
 
-.viewer video {
+.viewer {
     z-index: 2000;
     position: relative;
     flex: 1;
@@ -171,11 +173,20 @@ a {
     max-width: 90vw;
     padding: 0;
     margin: 3vh auto;
-    border: 3px solid rgba(113, 128, 185, 1);
+    border: 1px solid rgba(239, 239, 240, 1);
     border-radius: 18px;
-    background-color: #2d3047;
+    background-color: rgba(239, 239, 240, 1);
     box-shadow: rgba(45, 48, 71, 0.3) 0px 30px 60px 3px;
     transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.viewer video {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    border: 0 solid transparent;
+    border-radius: 18px;
 }
 
 .privacy {
@@ -227,7 +238,9 @@ a {
 }
 
 .footer ul li a {
-    padding: 1.5vh 6vw;
+    height: auto;
+    width: 100%;
+    padding: 1.5vh 3vw;
     border-radius: 90px;
     color: rgba(45, 48, 71, 1);
     background-color: rgba(239, 239, 240, 1);
@@ -251,14 +264,13 @@ a {
     .container {
         margin: 6vh auto;
     }
-    .viewer video {
+    .viewer {
         margin: 6vh auto;
     }
 }
 
 @media only screen and (min-width: 1400px) {
-    .viewer video {
-        min-height: 30vh;
+    .viewer {
         max-width: 60vw;
     }
 }
