@@ -39,7 +39,7 @@ export default function Footer() {
                     </li>
                     <li>
                         <span>
-                            &#x24B8; {new Date().getFullYear()} pixelssh
+                            &#x24B8; {new Date().getFullYear()} PixelsSeeHyper
                         </span>
                     </li>
                 </ul>

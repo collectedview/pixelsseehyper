@@ -13,10 +13,10 @@ export default function Privacy() {
                 </ol>
                 <hr />
                 <p>
-                    Welcome to&nbsp;<strong>pixelssh</strong>.
+                    Welcome to&nbsp;<strong>PixelsSeeHyper</strong>.
                 </p>
                 <p>
-                    pixelssh&nbsp;(&ldquo;us&rdquo;, &ldquo;we&rdquo;, or
+                    PixelsSeeHyper&nbsp;(&ldquo;us&rdquo;, &ldquo;we&rdquo;, or
                     &ldquo;our&rdquo;) operates&nbsp;https://pixels.sh and [●]
                     mobile application&nbsp;(hereinafter referred to as &ldquo;
                     <strong>Service</strong>&rdquo;).
@@ -49,7 +49,7 @@ export default function Privacy() {
                 <p>
                     <strong>SERVICE&nbsp;</strong>means
                     the&nbsp;https://pixels.sh website and [●] mobile
-                    application&nbsp;operated by&nbsp;pixelssh.
+                    application&nbsp;operated by&nbsp;PixelsSeeHyper.
                 </p>
                 <p>
                     <strong>PERSONAL DATA</strong>&nbsp;means data about a
@@ -262,7 +262,8 @@ export default function Privacy() {
                 </ol>
                 <hr />
                 <p>
-                    pixelssh&nbsp;uses the collected data for various purposes:
+                    PixelsSeeHyper&nbsp;uses the collected data for various
+                    purposes:
                 </p>
 
                 <ul>
@@ -390,10 +391,10 @@ export default function Privacy() {
                     that transfer.
                 </p>
                 <p>
-                    pixelssh&nbsp;will take all the steps reasonably necessary
-                    to ensure that your data is treated securely and in
-                    accordance with this Privacy Policy and no transfer of your
-                    Personal Data will take place to an organisation or a
+                    PixelsSeeHyper&nbsp;will take all the steps reasonably
+                    necessary to ensure that your data is treated securely and
+                    in accordance with this Privacy Policy and no transfer of
+                    your Personal Data will take place to an organisation or a
                     country unless there are adequate controls in place
                     including the security of your data and other personal
                     information.
@@ -912,11 +913,11 @@ export default function Privacy() {
                 </ol>
                 <hr />
                 <p>
-                    pixelssh&nbsp;uses remarketing services to advertise on
-                    third party websites to you after you visited our Service.
-                    We and our third-party vendors use cookies to inform,
-                    optimise and serve ads based on your past visits to our
-                    Service.
+                    PixelsSeeHyper&nbsp;uses remarketing services to advertise
+                    on third party websites to you after you visited our
+                    Service. We and our third-party vendors use cookies to
+                    inform, optimise and serve ads based on your past visits to
+                    our Service.
                 </p>
                 <p>Google Ads (AdWords)</p>
                 <p>

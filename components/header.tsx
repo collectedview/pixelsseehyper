@@ -12,8 +12,8 @@ export default function Header() {
                         <Link href="/">
                             <Image
                                 className="logo"
-                                src="/pixelssh.svg"
-                                alt="pixelssh"
+                                src="/PixelsSeeHyper.svg"
+                                alt="PixelsSeeHyper"
                                 width={90}
                                 height={90}
                                 priority
