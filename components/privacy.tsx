@@ -758,7 +758,6 @@ export default function Privacy() {
                 </p>
                 <p>By email: wave@pixels.sh</p>
                 <p>By visiting this page on our website: https://pixels.sh</p>
-                <p>By phone number: +17168688869</p>
                 <p>
                     Your data protection rights, described above, are covered by
                     the CCPA, short for the California Consumer Privacy Act. To

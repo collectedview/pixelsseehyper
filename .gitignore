@@ -32,6 +32,7 @@ prepros.config
 .pnp.cjs
 .pnp.loader.mjs
 *.pem
+deno.lock
 
 ### Debug ###
 npm-debug.log*
