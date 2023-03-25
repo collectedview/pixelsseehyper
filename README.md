@@ -51,7 +51,7 @@ python -m pip check
 5. Start Python Application:
 
 ```zsh
-python -m pip check
+python3 video.py
 ```
 
 #### Acknowledgements (v0.2.0):
