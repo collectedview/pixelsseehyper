@@ -12,7 +12,7 @@ export const userMedia = (constraints: object) => {
                 return await setMedia(null)
             }
         } catch (err) {
-            console.log('err', err)
+            console.warn('err', err)
             return await setMedia(null)
         }
     }
@@ -21,9 +21,7 @@ export const userMedia = (constraints: object) => {
         if (!media) {
             handleMedia()
         }
-        return () => {
-            true
-        }
+        return () => true
     }, [constraints, media])
 
     return { media }
