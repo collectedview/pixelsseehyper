@@ -11,16 +11,16 @@ export default function Video({ srcObject }: PropsType) {
         try {
             if (video) {
                 if (video?.['current']) {
-                    return video.current.srcObject = srcObject
+                    return (video.current.srcObject = srcObject)
                 } else {
-                    return null
+                    return
                 }
             } else {
-                return null
+                return
             }
         } catch (err) {
             console.warn('err', err)
-            return null
+            return
         }
     }
 
@@ -28,7 +28,9 @@ export default function Video({ srcObject }: PropsType) {
         if (srcObject) {
             handleVideo()
         }
-        return () => true
+        return () => {
+            true
+        }
     }, [video, srcObject])
 
     return <video ref={video} autoPlay playsInline muted controls />
