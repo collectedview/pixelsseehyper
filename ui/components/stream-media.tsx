@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
-export const userMedia = (constraints: object) => {
+export const StreamMedia = (constraints: object) => {
     const [media, setMedia] = useState<any>(null)
 
     const handleMedia = async () => {

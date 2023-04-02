@@ -11,7 +11,7 @@ export default function Video({ srcObject }: PropsType) {
         try {
             if (video) {
                 if (video?.['current']) {
-                    return (video.current.srcObject = srcObject)
+                   video.current.srcObject = srcObject
                 } else {
                     return null
                 }
