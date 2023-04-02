@@ -25,10 +25,12 @@ web-build/
 .env.test.local
 .env.production.local
 yarn.lock
+*/yarn.lock
 package-lock.json
 .eslintcache
 prepros.config
 .yarn
+*/.yarn
 .yarnrc.yml
 .pnp.cjs
 .pnp.loader.mjs
@@ -52,9 +54,10 @@ yarn-error.log*
 /nodemon.json
 
 ### Next.js ###
+.next
 /.next/
-/out/
 */.next
+/out/
 
 ### Vercel ###
 .vercel

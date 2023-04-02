@@ -16,7 +16,7 @@ export default function Video({ srcObject }: PropsType) {
                     return null
                 }
             } else {
-                return
+                return null
             }
         } catch (err) {
             console.warn('err', err)
