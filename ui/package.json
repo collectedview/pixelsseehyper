@@ -1,5 +1,5 @@
 {
-    "name": "PixelsSeeHyper",
+    "name": "pixelsseehyper",
     "version": "0.2.1",
     "private": true,
     "scripts": {
@@ -9,21 +9,22 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "next": "latest",
-        "react": "latest",
-        "react-dom": "latest"
+        "next": "13.2.4",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "typescript": "5.0.3"
     },
     "devDependencies": {
         "@next/eslint-plugin-next": "^13.2.4",
-        "@types/node": "18.15.3",
-        "@types/react": "latest",
-        "@types/react-dom": "latest",
+        "@types/node": "18.15.11",
+        "@types/react": "18.0.31",
+        "@types/react-dom": "18.0.11",
         "@typescript-eslint/eslint-plugin": "latest",
         "@typescript-eslint/parser": "latest",
-        "eslint": "latest",
+        "eslint": "8.37.0",
+        "eslint-config-next": "13.2.4",
         "eslint-config-prettier": "^8.7.0",
         "eslint-plugin-react": "latest",
-        "prettier": "2.8.4",
-        "typescript": "*"
+        "prettier": "2.8.4"
     }
 }

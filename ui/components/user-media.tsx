@@ -9,11 +9,11 @@ export const userMedia = (constraints: object) => {
             if (data) {
                 return await setMedia(data)
             } else {
-                return await setMedia(null)
+                return null
             }
         } catch (err) {
-            console.log('err', err)
-            return await setMedia(null)
+            console.warn('err', err)
+            return null
         }
     }
 

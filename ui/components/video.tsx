@@ -9,14 +9,18 @@ export default function Video({ srcObject }: PropsType) {
 
     const handleVideo = async () => {
         try {
-            if (video?.['current']) {
-                video.current.srcObject = srcObject
-                return
+            if (video) {
+                if (video?.['current']) {
+                    return (video.current.srcObject = srcObject)
+                } else {
+                    return null
+                }
             } else {
                 return null
             }
         } catch (err) {
-            console.log('err', err)
+            console.warn('err', err)
+            return null
         }
     }
 
