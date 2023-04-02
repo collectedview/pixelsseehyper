@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { userMedia } from '@/components/user-media'
+import { StreamMedia } from '@/components/user-media'
 import Video from '@/components/video'
 
 export default function Viewer() {
-    const { media } = userMedia({
+    const { media } = StreamMedia({
         audio: true,
         video: {
             facingMode: 'user',
