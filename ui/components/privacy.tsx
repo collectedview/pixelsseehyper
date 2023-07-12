@@ -17,15 +17,17 @@ export default function Privacy() {
                 </p>
                 <p>
                     PixelsSeeHyper&nbsp;(&ldquo;us&rdquo;, &ldquo;we&rdquo;, or
-                    &ldquo;our&rdquo;) operates&nbsp;https://pixels.sh and [●]
+                    &ldquo;our&rdquo;)
+                    operates&nbsp;https://pixelsseehyper.vercel.app/ and [●]
                     mobile application&nbsp;(hereinafter referred to as &ldquo;
                     <strong>Service</strong>&rdquo;).
                 </p>
                 <p>
                     Our Privacy Policy governs your visit
-                    to&nbsp;https://pixels.sh and [●] mobile application, and
-                    explains how we collect, safeguard and disclose information
-                    that results from your use of our Service.
+                    to&nbsp;https://pixelsseehyper.vercel.app/ and [●] mobile
+                    application, and explains how we collect, safeguard and
+                    disclose information that results from your use of our
+                    Service.
                 </p>
                 <p>
                     We use your data to provide and improve Service. By using
@@ -48,8 +50,8 @@ export default function Privacy() {
                 <hr />
                 <p>
                     <strong>SERVICE&nbsp;</strong>means
-                    the&nbsp;https://pixels.sh website and [●] mobile
-                    application&nbsp;operated by&nbsp;PixelsSeeHyper.
+                    the&nbsp;https://pixelsseehyper.vercel.app/ website and [●]
+                    mobile application&nbsp;operated by&nbsp;PixelsSeeHyper.
                 </p>
                 <p>
                     <strong>PERSONAL DATA</strong>&nbsp;means data about a
@@ -145,7 +147,7 @@ export default function Privacy() {
                     information that may be of interest to you. You may opt out
                     of receiving any, or all, of these communications from
                     us&nbsp;by following the unsubscribe link or by emailing
-                    at&nbsp;wave@pixels.sh.
+                    at&nbsp;unicorn@collectedview.io.
                 </p>
                 <p>
                     <strong>Usage Data</strong>
@@ -505,7 +507,7 @@ export default function Privacy() {
                 <p>
                     If you wish to be informed what Personal Data we hold about
                     you and if you want it to be removed from our systems,
-                    please email us at wave@pixels.sh.
+                    please email us at unicorn@collectedview.io.
                 </p>
                 <p>
                     In certain circumstances, you have the following data
@@ -615,7 +617,7 @@ export default function Privacy() {
                 <ul>
                     <li>
                         users are able to change their personal information by
-                        emailing us at wave@pixels.sh.
+                        emailing us at unicorn@collectedview.io.
                     </li>
                 </ul>
 
@@ -756,8 +758,11 @@ export default function Privacy() {
                     above, please send your request(s) by one of the following
                     means:
                 </p>
-                <p>By email: wave@pixels.sh</p>
-                <p>By visiting this page on our website: https://pixels.sh</p>
+                <p>By email: unicorn@collectedview.io</p>
+                <p>
+                    By visiting this page on our website:
+                    https://pixelsseehyper.vercel.app/
+                </p>
                 <p>
                     Your data protection rights, described above, are covered by
                     the CCPA, short for the California Consumer Privacy Act. To
@@ -1111,8 +1116,11 @@ export default function Privacy() {
                     If you have any questions about this Privacy Policy, please
                     contact us:
                 </p>
-                <p>By email: wave@pixels.sh.</p>
-                <p>By visiting this page on our website: https://pixels.sh.</p>
+                <p>By email: unicorn@collectedview.io.</p>
+                <p>
+                    By visiting this page on our website:
+                    https://pixelsseehyper.vercel.app/.
+                </p>
             </div>
         </>
     )

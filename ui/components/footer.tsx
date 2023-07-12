@@ -9,26 +9,6 @@ export default function Footer() {
                 <ul>
                     <li>
                         <Link
-                            href="mailto:wave@pixels.sh"
-                            target="_self"
-                            aria-label="Send a wave"
-                            type="link"
-                        >
-                            Send a Wave
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href="/"
-                            target="_self"
-                            aria-label="Send a wave"
-                            type="link"
-                        >
-                            Return to Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
                             href="/privacy"
                             target="_self"
                             aria-label="Send a wave"
